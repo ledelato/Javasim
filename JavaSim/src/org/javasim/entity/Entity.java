@@ -1,4 +1,4 @@
-package or.javasim.entity;
+package org.javasim.entity;
 //This is a generic entity that has a single attribute CreateTime
 
 public class Entity {

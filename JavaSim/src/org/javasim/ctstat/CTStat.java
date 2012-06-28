@@ -1,4 +1,4 @@
-package or.javasim.ctstat;
+package org.javasim.ctstat;
 //Generic continuous-time statistics object
 
 public class CTStat {

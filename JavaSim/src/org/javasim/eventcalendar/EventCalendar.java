@@ -6,7 +6,8 @@ package org.javasim.eventcalendar;
 
 import java.util.ArrayList;
 
-import or.javasim.eventnotice.EventNotice;
+import org.javasim.eventnotice.EventNotice;
+
 
 public class EventCalendar {
 	private ArrayList<EventNotice> thisCalendar;

@@ -2,7 +2,7 @@
 
 //TODO: the raw object class is really dangerous here. I need to think of a better way to do this.
 
-package or.javasim.eventnotice;
+package org.javasim.eventnotice;
 
 public class EventNotice {
 	private final double eventTime;

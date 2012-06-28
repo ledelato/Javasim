@@ -1,5 +1,5 @@
 //Generic discrete-time statistics object
-package or.javasim.dtstat;
+package org.javasim.dtstat;
 
 public class DTStat {
 	private double sum;

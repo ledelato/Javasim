@@ -1,4 +1,4 @@
-package or.javasim.rng;
+package org.javasim.rng;
 
 public class Rng {
 

@@ -1,6 +1,6 @@
 package org.javasim.javasim.resource;
 
-import or.javasim.ctstat.CTStat;
+import org.javasim.ctstat.CTStat;
 
 public class Resource {
   private int numberOfUnits;
