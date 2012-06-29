@@ -1,5 +1,10 @@
 package org.javasim.rng;
-
+/**
+ * @author ledelato
+ * This random number generator is a VBA translation of the C program found in
+ * Law, A. M. and Kelton, W. D., ``Simulation Modeling and Analysis'',
+ * Singapore: The McGraw-Hill Book Co, pp. 430--431.
+ */
 public class Rng {
 
 	public final long MODLUS = 2147483647;
@@ -8,6 +13,9 @@ public class Rng {
 
 	private long[] zrng;
 
+	/**
+	 * Initialize the random seed.
+	 */
 	public void initializeRNSeed() {
 		zrng = new long[100];
 		zrng[0] = 1973272912;
@@ -112,6 +120,12 @@ public class Rng {
 		zrng[99] = 547070247;
 	}
 
+	//TODO: document what the input stream actually means
+	/**
+	 * 
+	 * @param stream
+	 * @return Return a random number from a linear congruential generator
+	 */
 	public double lcgrand(int stream) {
 		long zi;
 		long lowprd;
