@@ -14,7 +14,7 @@ public class DTStat {
 		numberOfObservations = 0.0 ;
 	}
 
-	public void setStats(double x) {
+	public void record(double x) {
 		sum += x;
 		sumSquared += x * x;
 		numberOfObservations++;
@@ -26,11 +26,12 @@ public class DTStat {
 	}
 
 	public double stdDev() {
-		double stdDev = Math.sqrt((sumSquared - sum * sum
+		if(numberOfObservations > 1.0) {
+		return Math.sqrt((sumSquared - sum * sum
 				/ numberOfObservations)
 				/ (numberOfObservations - 1.0));
-
-		return stdDev;
+		}
+		return 0;
 	}
 	
 	public void clear() {

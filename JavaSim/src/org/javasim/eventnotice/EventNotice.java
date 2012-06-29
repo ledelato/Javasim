@@ -5,30 +5,33 @@
 package org.javasim.eventnotice;
 
 public class EventNotice {
-	private final double eventTime;
-	private final String eventType;
-	private final Object whichObject;
-	
+	private double eventTime;
+	private String eventType;
+	private Object whichObject;
+
 	// Add additional problem specific attributes here
-	
+
 	public EventNotice(double eventTime, String eventType, Object whichObject) {
-	  this.eventTime = eventTime;
-	  this.eventType = eventType;
-	  this.whichObject = whichObject;
-	}
-	
-	public double getEventTime() {
-	  return eventTime;
-	}
-	
-	public String getEventType() {
-	  return eventType;
-	}
-	
-	public Object getWhichObject() {
-	  return whichObject;
+		this.eventTime = eventTime;
+		this.eventType = eventType;
+		this.whichObject = whichObject;
 	}
 
-	
+	public EventNotice(double eventTime, String eventType) {
+		this.eventTime = eventTime;
+		this.eventType = eventType;
+	}
+
+	public double getEventTime() {
+		return eventTime;
+	}
+
+	public String getEventType() {
+		return eventType;
+	}
+
+	public Object getWhichObject() {
+		return whichObject;
+	}
 
 }

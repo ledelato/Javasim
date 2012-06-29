@@ -41,7 +41,7 @@ public class EventCalendar {
 		return null;
 	}
 
-	public int getN() {
+	public int N() {
 		return thisCalendar.size();
 	}
 
